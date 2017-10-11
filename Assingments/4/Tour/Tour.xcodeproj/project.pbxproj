@@ -304,6 +304,7 @@
 				D150AF921F7437D700AA576C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

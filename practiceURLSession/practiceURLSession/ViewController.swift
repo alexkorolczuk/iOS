@@ -1,8 +1,8 @@
 //
 //  ViewController.swift
-//  Tour
+//  practiceURLSession
 //
-//  Created by Aleksandra Korolczuk on 2017-09-21.
+//  Created by Aleksandra Korolczuk on 2017-10-06.
 //  Copyright © 2017 Aleksandra Korolczuk. All rights reserved.
 //
 
@@ -12,15 +12,9 @@ class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        let button = UIBarButtonItem(barButtonSystemItem: .redo, target: self, action: #selector(goToFirst))
-        navigationItem.rightBarButtonItem = button
+        // Do any additional setup after loading the view, typically from a nib.
     }
-    
-    @objc func goToFirst(barButton: UIBarButtonItem) {
-        self.navigationController?.popToRootViewController(animated: true)
-    }
-    
-    
+
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.

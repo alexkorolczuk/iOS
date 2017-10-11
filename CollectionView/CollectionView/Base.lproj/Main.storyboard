@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13196" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13173"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Master View Controller-->
+        <scene sceneID="HJS-2c-8Ic">
+            <objects>
+                <collectionViewController id="7mn-wx-haE" customClass="MasterViewController" customModule="CollectionView" customModuleProvider="target" sceneMemberID="viewController">
+                    <collectionView key="view" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" id="UJK-01-Ya6">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                        <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="0.0" minimumInteritemSpacing="0.0" id="FUD-OP-11V">
+                            <size key="itemSize" width="200" height="200"/>
+                            <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                            <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                            <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                        </collectionViewFlowLayout>
+                        <cells>
+                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" misplaced="YES" reuseIdentifier="Cell" id="gh1-c8-DCk" customClass="ParkCell" customModule="CollectionView" customModuleProvider="target">
+                                <rect key="frame" x="87.5" y="0.0" width="200" height="200"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO">
+                                    <rect key="frame" x="0.0" y="0.0" width="200" height="200"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="randomLabel" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="v5D-Ty-bSO" userLabel="RandomLabel">
+                                            <rect key="frame" x="-14" y="170" width="214" height="30"/>
+                                            <color key="backgroundColor" white="0.27525499131944442" alpha="1" colorSpace="calibratedWhite"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="30" id="HKM-kd-U6D"/>
+                                                <constraint firstAttribute="width" constant="198" id="QIB-oM-0Ed"/>
+                                                <constraint firstAttribute="height" constant="30" id="prr-H5-6HT"/>
+                                            </constraints>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Qfu-i5-Deb">
+                                            <rect key="frame" x="2" y="0.0" width="198" height="169"/>
+                                            <constraints>
+                                                <constraint firstAttribute="width" constant="198" id="8JF-3G-tmI"/>
+                                                <constraint firstAttribute="height" constant="169" id="aiE-UG-umm"/>
+                                            </constraints>
+                                        </imageView>
+                                    </subviews>
+                                </view>
+                                <constraints>
+                                    <constraint firstItem="v5D-Ty-bSO" firstAttribute="centerX" secondItem="Qfu-i5-Deb" secondAttribute="centerX" id="3dU-8j-rHe"/>
+                                    <constraint firstItem="Qfu-i5-Deb" firstAttribute="centerX" secondItem="v5D-Ty-bSO" secondAttribute="centerX" id="TE3-8H-Tca"/>
+                                    <constraint firstItem="v5D-Ty-bSO" firstAttribute="leading" secondItem="Qfu-i5-Deb" secondAttribute="leading" id="ahw-lq-uCT"/>
+                                    <constraint firstItem="v5D-Ty-bSO" firstAttribute="top" secondItem="Qfu-i5-Deb" secondAttribute="bottom" constant="1" id="f0n-vp-oaD"/>
+                                    <constraint firstItem="v5D-Ty-bSO" firstAttribute="top" secondItem="Qfu-i5-Deb" secondAttribute="bottom" constant="1" id="fP8-3a-Ai8"/>
+                                    <constraint firstItem="v5D-Ty-bSO" firstAttribute="trailing" secondItem="Qfu-i5-Deb" secondAttribute="trailing" id="mR8-jJ-ilw"/>
+                                </constraints>
+                                <connections>
+                                    <outlet property="parkImageView" destination="Qfu-i5-Deb" id="5ni-kg-k6E"/>
+                                    <outlet property="randomLabel" destination="v5D-Ty-bSO" id="1dC-Ne-Xn0"/>
+                                </connections>
+                            </collectionViewCell>
+                        </cells>
+                        <connections>
+                            <outlet property="dataSource" destination="7mn-wx-haE" id="58A-qe-NS6"/>
+                            <outlet property="delegate" destination="7mn-wx-haE" id="NFm-UX-GsE"/>
+                        </connections>
+                    </collectionView>
+                </collectionViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="y7v-cZ-NT1" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="84" y="136.28185907046478"/>
+        </scene>
+    </scenes>
+</document>
