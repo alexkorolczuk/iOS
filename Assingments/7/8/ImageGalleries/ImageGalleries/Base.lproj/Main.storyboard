@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13196" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13173"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Image Detail View Controller-->
+        <scene sceneID="TMN-vL-AWG">
+            <objects>
+                <viewController id="u7U-ih-6CL" customClass="ImageDetailViewController" customModule="ImageGalleries" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Ng1-ik-zrX">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="BTy-jZ-7Af">
+                                <rect key="frame" x="16" y="20" width="343" height="627"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="caterpillar" translatesAutoresizingMaskIntoConstraints="NO" id="PIu-Vp-bWg">
+                                        <rect key="frame" x="51" y="94" width="240" height="128"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="128" id="2QZ-cR-HFI"/>
+                                        </constraints>
+                                    </imageView>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="PIu-Vp-bWg" secondAttribute="trailing" constant="52" id="0Ny-yU-aag"/>
+                                    <constraint firstAttribute="bottom" secondItem="PIu-Vp-bWg" secondAttribute="bottom" constant="405" id="44u-8j-TVc"/>
+                                    <constraint firstItem="PIu-Vp-bWg" firstAttribute="top" secondItem="BTy-jZ-7Af" secondAttribute="top" constant="94" id="e6H-Ec-qwv"/>
+                                    <constraint firstItem="PIu-Vp-bWg" firstAttribute="leading" secondItem="BTy-jZ-7Af" secondAttribute="leading" constant="51" id="qUe-XJ-73y"/>
+                                    <constraint firstItem="PIu-Vp-bWg" firstAttribute="centerX" secondItem="BTy-jZ-7Af" secondAttribute="centerX" id="r77-EZ-Xgw"/>
+                                </constraints>
+                            </scrollView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="BTy-jZ-7Af" secondAttribute="bottom" constant="20" symbolic="YES" id="COv-CC-Kz3"/>
+                            <constraint firstItem="BTy-jZ-7Af" firstAttribute="top" secondItem="B8c-L6-TqQ" secondAttribute="top" id="Qbp-jT-pJa"/>
+                            <constraint firstItem="BTy-jZ-7Af" firstAttribute="leading" secondItem="Ng1-ik-zrX" secondAttribute="leadingMargin" id="QrS-cc-Nra"/>
+                            <constraint firstItem="BTy-jZ-7Af" firstAttribute="trailing" secondItem="Ng1-ik-zrX" secondAttribute="trailingMargin" id="lz7-nz-pty"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="B8c-L6-TqQ"/>
+                    </view>
+                    <connections>
+                        <outlet property="ImageDetailScrollView" destination="BTy-jZ-7Af" id="yC9-cL-sZm"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="zkz-NV-GzM" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="133.59999999999999" y="792.95352323838085"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="ImageGalleries" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" pagingEnabled="YES" translatesAutoresizingMaskIntoConstraints="NO" id="f31-yu-ejl">
+                                <rect key="frame" x="16" y="12" width="343" height="635"/>
+                            </scrollView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="f31-yu-ejl" secondAttribute="bottom" constant="20" symbolic="YES" id="18F-Iw-v3O"/>
+                            <constraint firstItem="f31-yu-ejl" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="9FE-Nb-TcR"/>
+                            <constraint firstItem="f31-yu-ejl" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="topMargin" constant="-8" id="JXV-Xg-9AU"/>
+                            <constraint firstItem="f31-yu-ejl" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="qZF-dF-gv4"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="myScrollView" destination="f31-yu-ejl" id="cyQ-AZ-4a5"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="136.80000000000001" y="133.5832083958021"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="caterpillar" width="320" height="320"/>
+    </resources>
+</document>
