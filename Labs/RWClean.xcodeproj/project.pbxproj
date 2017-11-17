@@ -49,6 +49,7 @@
 		4E246B801FBE01C900402427 /* NetworkError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E246B7F1FBE01C900402427 /* NetworkError.swift */; };
 		4E246B821FBE01CE00402427 /* NetworkClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E246B811FBE01CE00402427 /* NetworkClient.swift */; };
 		D178DB4D1FBE0EB5000D32DB /* ProductsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D178DB4C1FBE0EB5000D32DB /* ProductsViewController.swift */; };
+		D19DACEA1FBF520C0035F6EB /* ProductViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D19DACE91FBF520C0035F6EB /* ProductViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -97,6 +98,7 @@
 		4E246B7F1FBE01C900402427 /* NetworkError.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkError.swift; sourceTree = "<group>"; };
 		4E246B811FBE01CE00402427 /* NetworkClient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkClient.swift; sourceTree = "<group>"; };
 		D178DB4C1FBE0EB5000D32DB /* ProductsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductsViewController.swift; sourceTree = "<group>"; };
+		D19DACE91FBF520C0035F6EB /* ProductViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -218,6 +220,7 @@
 		42ECC7D51EB7BC690090EED2 /* Cleaning Services */ = {
 			isa = PBXGroup;
 			children = (
+				D19DACE81FBF51E90035F6EB /* ViewModels */,
 				42BF58621EB7CF170072CFCA /* CleaningServicesBuilder.swift */,
 				42C0F5D21EB7AE8800C6EBAB /* Controllers */,
 				42ECC7D91EB7BCC10090EED2 /* Models */,
@@ -385,6 +388,14 @@
 			name = Models;
 			sourceTree = "<group>";
 		};
+		D19DACE81FBF51E90035F6EB /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				D19DACE91FBF520C0035F6EB /* ProductViewModel.swift */,
+			);
+			name = ViewModels;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -496,6 +507,7 @@
 				422FEA831E6767EB00AFDC41 /* BedroomCountViewController.swift in Sources */,
 				422FEA901E676B6D00AFDC41 /* OtherRoomCountViewController.swift in Sources */,
 				4276FCB71EB3E629004E96B9 /* SetNavigationRootSegue.swift in Sources */,
+				D19DACEA1FBF520C0035F6EB /* ProductViewModel.swift in Sources */,
 				421139E11E6BCB6D00A057BF /* Product.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

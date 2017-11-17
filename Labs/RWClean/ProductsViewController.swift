@@ -17,7 +17,7 @@ class ProductsViewController: UIViewController {
         }
     }
     
-   internal var products: [Product] = []
+   internal var productViewModels: [ProductViewModel] = []
     
     @IBOutlet internal var collectionView: UICollectionView! {
         didSet {
@@ -33,7 +33,7 @@ class ProductsViewController: UIViewController {
     collectionView.refreshControl?.beginRefreshing()
         networkClient.getProducts ( forType: productType, success: { [weak self] products in
         guard let strongSelf = self else { return }
-        strongSelf.products = products
+            strongSelf.productViewModels = products.map{ ProductViewModel(product: $0)}
         strongSelf.collectionView.reloadData()
         strongSelf.collectionView.refreshControl?.endRefreshing()
     
@@ -63,24 +63,23 @@ class ProductsViewController: UIViewController {
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         guard let viewController = segue.destination as? ProductDetailsViewController else { return }
             let indexPath = collectionView.indexPathsForSelectedItems!.first!
-            let product = products[indexPath.row]
-            viewController.product = product
+            let productViewModel = productViewModels[indexPath.row]
+            viewController.productViewModel = productViewModel
     }
 }
     
 extension ProductsViewController: UICollectionViewDataSource {
     
     public func collectionView(_ collectionView: UICollectionView,numberOfItemsInSection section: Int) -> Int {
-        return products.count
+        return productViewModels.count
         
     }
     
     public func collectionView(_ collectionView: UICollectionView,    cellForItemAt indexPath: IndexPath)    -> UICollectionViewCell {
         let cellIdentifier = "ProductCell"
-        let product = products[indexPath.row]
+        let productViewModel = productViewModels[indexPath.row]
         let cell = collectionView.dequeueReusableCell( withReuseIdentifier: cellIdentifier,for: indexPath) as! ProductCollectionViewCell
-        cell.label.text = product.title
-        cell.imageView.rw_setImage(url: product.imageURL)
+        productViewModel.configure(cell)
         return cell
     }
 }

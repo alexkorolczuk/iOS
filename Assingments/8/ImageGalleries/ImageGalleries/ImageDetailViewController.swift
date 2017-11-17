@@ -19,7 +19,6 @@ class ImageDetailViewController: UIViewController, UIScrollViewDelegate {
         ImageDetailScrollView.delegate = self
         
 
-        // Do any additional setup after loading the view.
     }
 
     func viewForZooming(in scrollView: UIScrollView) -> UIView? {

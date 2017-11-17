@@ -56,3 +56,17 @@ public class ProductCollectionViewCell: UICollectionViewCell {
     layer.borderWidth = 2.0
   }
 }
+
+
+
+extension ProductCollectionViewCell : ProductViewModelView {
+    
+     public var  productImageView: UIImageView {
+        return imageView
+    }
+
+     public var  productTitleLabel : UILabel {
+        return label
+    }
+    
+}
