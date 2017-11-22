@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="Bvw-Nd-xPG">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12120" systemVersion="16E195" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="Bvw-Nd-xPG">
     <device id="retina5_5" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13527"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12088"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -20,7 +20,7 @@
                         <viewControllerLayoutGuide type="bottom" id="Wa0-Dr-O7a"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="h7T-bz-lDK">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="672"/>
+                        <rect key="frame" x="0.0" y="64" width="414" height="672"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="home" translatesAutoresizingMaskIntoConstraints="NO" id="q3n-0g-p6x">
@@ -74,7 +74,7 @@
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="Bvw-Nd-xPG" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" translucent="NO" id="xY8-7g-w44">
-                        <rect key="frame" x="0.0" y="20" width="414" height="44"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="barTintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </navigationBar>
@@ -100,7 +100,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bedroom" translatesAutoresizingMaskIntoConstraints="NO" id="LUY-zG-ZLV">
-                                <rect key="frame" x="0.0" y="20" width="414" height="368"/>
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="368"/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Eil-1J-YTV">
                                 <rect key="frame" x="20" y="686" width="374" height="30"/>
@@ -113,16 +113,16 @@
                                 </connections>
                             </button>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="RNc-Iy-jnn">
-                                <rect key="frame" x="0.0" y="388" width="414" height="298"/>
+                                <rect key="frame" x="0.0" y="368" width="414" height="318"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" alignment="firstBaseline" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="4Vc-ox-i0x">
-                                        <rect key="frame" x="97.666666666666671" y="101" width="218.33333333333331" height="97"/>
+                                        <rect key="frame" x="95.666666666666686" y="111" width="222" height="97"/>
                                         <subviews>
                                             <stackView opaque="NO" contentMode="scaleToFill" horizontalCompressionResistancePriority="1000" verticalCompressionResistancePriority="1000" axis="vertical" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="QlT-A6-RkU">
-                                                <rect key="frame" x="0.0" y="0.0" width="94" height="97"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="93.999999999999986" height="97"/>
                                                 <subviews>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="3" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="edB-b8-Y0p">
-                                                        <rect key="frame" x="0.0" y="0.0" width="94" height="48"/>
+                                                        <rect key="frame" x="0.0" y="0.0" width="93.999999999999986" height="48"/>
                                                         <fontDescription key="fontDescription" type="system" pointSize="40"/>
                                                         <nil key="textColor"/>
                                                         <nil key="highlightedColor"/>
@@ -136,7 +136,7 @@
                                                 </subviews>
                                             </stackView>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" text="Bedrooms" lineBreakMode="tailTruncation" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="a2d-5u-A1o">
-                                                <rect key="frame" x="104" y="13.333333333333313" width="114.33333333333331" height="31.333333333333329"/>
+                                                <rect key="frame" x="103.99999999999999" y="13.333333333333314" width="118.00000000000001" height="31.333333333333314"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="26"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
@@ -191,7 +191,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bathroom" translatesAutoresizingMaskIntoConstraints="NO" id="LUQ-gK-NwI">
-                                <rect key="frame" x="0.0" y="20" width="414" height="368"/>
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="368"/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Cvo-q0-kis">
                                 <rect key="frame" x="20" y="686" width="374" height="30"/>
@@ -204,16 +204,16 @@
                                 </connections>
                             </button>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="SCu-kg-QMk">
-                                <rect key="frame" x="0.0" y="388" width="414" height="298"/>
+                                <rect key="frame" x="0.0" y="368" width="414" height="318"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" alignment="firstBaseline" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="qYd-4a-ouf">
-                                        <rect key="frame" x="94.333333333333314" y="101.33333333333331" width="226" height="97"/>
+                                        <rect key="frame" x="92.333333333333343" y="111.33333333333331" width="229.66666666666666" height="97.000000000000057"/>
                                         <subviews>
                                             <stackView opaque="NO" contentMode="scaleToFill" horizontalCompressionResistancePriority="1000" verticalCompressionResistancePriority="1000" axis="vertical" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="230-fh-L7S">
-                                                <rect key="frame" x="0.0" y="0.0" width="94" height="97"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="94.000000000000014" height="97.000000000000057"/>
                                                 <subviews>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="2" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="V1Z-La-qVu">
-                                                        <rect key="frame" x="0.0" y="0.0" width="94" height="48"/>
+                                                        <rect key="frame" x="0.0" y="0.0" width="94.000000000000014" height="48.000000000000057"/>
                                                         <fontDescription key="fontDescription" type="system" pointSize="40"/>
                                                         <nil key="textColor"/>
                                                         <nil key="highlightedColor"/>
@@ -227,7 +227,7 @@
                                                 </subviews>
                                             </stackView>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" text="Bathrooms" lineBreakMode="tailTruncation" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BJ4-ub-Tgi">
-                                                <rect key="frame" x="104" y="13.333333333333369" width="122" height="31.333333333333329"/>
+                                                <rect key="frame" x="104.00000000000001" y="13.333333333333371" width="125.66666666666667" height="31.333333333333314"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="26"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
@@ -282,7 +282,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="other_rooms" translatesAutoresizingMaskIntoConstraints="NO" id="Q2A-R0-i6Z">
-                                <rect key="frame" x="0.0" y="20" width="414" height="368"/>
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="368"/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9qs-Xh-0hW">
                                 <rect key="frame" x="20" y="686" width="374" height="30"/>
@@ -295,16 +295,16 @@
                                 </connections>
                             </button>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="2JW-wo-qkr">
-                                <rect key="frame" x="0.0" y="388" width="414" height="298"/>
+                                <rect key="frame" x="0.0" y="368" width="414" height="318"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" alignment="top" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="co0-xa-Tap">
-                                        <rect key="frame" x="0.0" y="101.33333333333331" width="0.0" height="97"/>
+                                        <rect key="frame" x="105" y="111.33333333333331" width="204" height="97.000000000000057"/>
                                         <subviews>
                                             <stackView opaque="NO" contentMode="scaleToFill" horizontalCompressionResistancePriority="1000" verticalCompressionResistancePriority="1000" axis="vertical" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="sIB-sL-Ere">
-                                                <rect key="frame" x="0.0" y="0.0" width="94" height="97"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="94" height="97.000000000000057"/>
                                                 <subviews>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="htv-tj-44B">
-                                                        <rect key="frame" x="0.0" y="0.0" width="94" height="48"/>
+                                                        <rect key="frame" x="0.0" y="0.0" width="94" height="48.000000000000057"/>
                                                         <fontDescription key="fontDescription" type="system" pointSize="40"/>
                                                         <nil key="textColor"/>
                                                         <nil key="highlightedColor"/>
@@ -318,7 +318,7 @@
                                                 </subviews>
                                             </stackView>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" lineBreakMode="tailTruncation" numberOfLines="2" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="c4W-oA-BRq">
-                                                <rect key="frame" x="0.0" y="0.0" width="0.0" height="31.333333333333332"/>
+                                                <rect key="frame" x="110" y="0.0" width="94" height="62.333333333333314"/>
                                                 <string key="text">Other
 Rooms</string>
                                                 <fontDescription key="fontDescription" type="system" pointSize="26"/>
@@ -397,7 +397,7 @@ Rooms</string>
                                 <rect key="frame" x="0.0" y="388" width="414" height="220"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="2,000" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CJO-lA-nH0">
-                                        <rect key="frame" x="153.66666666666666" y="86" width="107.99999999999997" height="48"/>
+                                        <rect key="frame" x="153.66666666666669" y="86" width="108.00000000000006" height="48"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="40"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
@@ -461,7 +461,7 @@ Rooms</string>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="kitchen" translatesAutoresizingMaskIntoConstraints="NO" id="300-ka-fZq">
-                                <rect key="frame" x="0.0" y="20" width="414" height="368"/>
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="368"/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="999" verticalHuggingPriority="999" horizontalCompressionResistancePriority="999" verticalCompressionResistancePriority="999" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zSq-Ax-Y02">
                                 <rect key="frame" x="20" y="686" width="374" height="30"/>
@@ -474,7 +474,7 @@ Rooms</string>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="An average size kitchen." textAlignment="center" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hxf-eo-oxg">
-                                <rect key="frame" x="20" y="408" width="374" height="190"/>
+                                <rect key="frame" x="20" y="388" width="374" height="210"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="22"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -536,17 +536,17 @@ Rooms</string>
                                         <rect key="frame" x="0.0" y="0.0" width="414" height="49"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="o9u-ac-vbl" id="7yi-j6-8iR">
-                                            <rect key="frame" x="0.0" y="0.0" width="414" height="48.666666666666664"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="49"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="bedrooms" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="b13-zR-aKy">
-                                                    <rect key="frame" x="53" y="11" width="263" height="27"/>
+                                                    <rect key="frame" x="41" y="11" width="287" height="27"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="22"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <button opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="999" verticalHuggingPriority="999" horizontalCompressionResistancePriority="999" verticalCompressionResistancePriority="999" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Jnl-Y1-qHi">
-                                                    <rect key="frame" x="324" y="9" width="70" height="30"/>
+                                                    <rect key="frame" x="336" y="8" width="70" height="32"/>
                                                     <color key="backgroundColor" red="0.001327166334" green="0.32755678890000001" blue="0.57669931649999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                     <constraints>
                                                         <constraint firstAttribute="width" constant="70" id="xIS-MG-dGV"/>
@@ -559,7 +559,7 @@ Rooms</string>
                                                     </connections>
                                                 </button>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="999" verticalHuggingPriority="999" horizontalCompressionResistancePriority="999" verticalCompressionResistancePriority="999" text="3" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="A15-cG-ddY">
-                                                    <rect key="frame" x="20" y="11" width="25" height="27"/>
+                                                    <rect key="frame" x="8" y="8" width="25" height="32"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="40"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
@@ -583,17 +583,17 @@ Rooms</string>
                                         <rect key="frame" x="0.0" y="49" width="414" height="49"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="QXa-xR-B4Y" id="LkE-mm-NUa">
-                                            <rect key="frame" x="0.0" y="0.0" width="414" height="48.666666666666664"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="49"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="bathrooms" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FQz-rx-z1b">
-                                                    <rect key="frame" x="51.666666666666657" y="11" width="264.33333333333337" height="27"/>
+                                                    <rect key="frame" x="39.666666666666657" y="11" width="288.33333333333337" height="27"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="22"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <button opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="999" verticalHuggingPriority="999" horizontalCompressionResistancePriority="999" verticalCompressionResistancePriority="999" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="80B-Cf-QqQ">
-                                                    <rect key="frame" x="324" y="9" width="70" height="30"/>
+                                                    <rect key="frame" x="336" y="8" width="70" height="32"/>
                                                     <color key="backgroundColor" red="0.001327166334" green="0.32755678890000001" blue="0.57669931649999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                     <constraints>
                                                         <constraint firstAttribute="width" constant="70" id="kCK-PC-Tqa"/>
@@ -606,7 +606,7 @@ Rooms</string>
                                                     </connections>
                                                 </button>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="999" verticalHuggingPriority="999" horizontalCompressionResistancePriority="999" verticalCompressionResistancePriority="999" text="2" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OhC-cS-zy6">
-                                                    <rect key="frame" x="20" y="11" width="23.666666666666671" height="27"/>
+                                                    <rect key="frame" x="8.0000000000000018" y="8" width="23.666666666666671" height="32.666666666666664"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="40"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
@@ -630,17 +630,17 @@ Rooms</string>
                                         <rect key="frame" x="0.0" y="98" width="414" height="49"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="w5N-dV-owo" id="Iys-ui-fSP">
-                                            <rect key="frame" x="0.0" y="0.0" width="414" height="48.666666666666664"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="49"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="other rooms" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SNt-qm-Snb">
-                                                    <rect key="frame" x="46.333333333333343" y="11" width="269.66666666666663" height="27"/>
+                                                    <rect key="frame" x="34.333333333333343" y="11" width="293.66666666666663" height="27"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="22"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <button opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="999" verticalHuggingPriority="999" horizontalCompressionResistancePriority="999" verticalCompressionResistancePriority="999" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4Nl-8E-hb9">
-                                                    <rect key="frame" x="324" y="9" width="70" height="30"/>
+                                                    <rect key="frame" x="336" y="8" width="70" height="32"/>
                                                     <color key="backgroundColor" red="0.001327166334" green="0.32755678890000001" blue="0.57669931649999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                     <constraints>
                                                         <constraint firstAttribute="width" constant="70" id="Mqc-d6-ngf"/>
@@ -653,7 +653,7 @@ Rooms</string>
                                                     </connections>
                                                 </button>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="999" verticalHuggingPriority="999" horizontalCompressionResistancePriority="999" verticalCompressionResistancePriority="999" text="1" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OJF-aF-MbO">
-                                                    <rect key="frame" x="20" y="11" width="18.333333333333329" height="27"/>
+                                                    <rect key="frame" x="7.9999999999999982" y="8" width="18.333333333333329" height="32.666666666666664"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="40"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
@@ -677,17 +677,17 @@ Rooms</string>
                                         <rect key="frame" x="0.0" y="147" width="414" height="49"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="bYO-O4-20r" id="2ls-nM-elv">
-                                            <rect key="frame" x="0.0" y="0.0" width="414" height="48.666666666666664"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="49"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="-size kitchen" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="acp-Uq-S22">
-                                                    <rect key="frame" x="97.666666666666671" y="11" width="218.33333333333331" height="27"/>
+                                                    <rect key="frame" x="87.666666666666657" y="11" width="240.33333333333334" height="27"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="22"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <button opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="999" verticalHuggingPriority="999" horizontalCompressionResistancePriority="999" verticalCompressionResistancePriority="999" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uEy-yg-MVu">
-                                                    <rect key="frame" x="324" y="9" width="70" height="30"/>
+                                                    <rect key="frame" x="336" y="8" width="70" height="32"/>
                                                     <color key="backgroundColor" red="0.001327166334" green="0.32755678890000001" blue="0.57669931649999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                     <constraints>
                                                         <constraint firstAttribute="width" constant="70" id="SEI-fe-N7c"/>
@@ -700,7 +700,7 @@ Rooms</string>
                                                     </connections>
                                                 </button>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="999" verticalHuggingPriority="999" horizontalCompressionResistancePriority="999" verticalCompressionResistancePriority="999" text="Medium" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="w4j-v1-cHn">
-                                                    <rect key="frame" x="20" y="11" width="77.666666666666671" height="27"/>
+                                                    <rect key="frame" x="8" y="8" width="79.666666666666671" height="32.666666666666664"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="22"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
@@ -724,17 +724,17 @@ Rooms</string>
                                         <rect key="frame" x="0.0" y="196" width="414" height="49"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="QWz-sR-zR2" id="9Ao-yy-HHK">
-                                            <rect key="frame" x="0.0" y="0.0" width="414" height="48.666666666666664"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="49"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ft²" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iFp-cC-FeY">
-                                                    <rect key="frame" x="136" y="11" width="180" height="27"/>
+                                                    <rect key="frame" x="124" y="11" width="204" height="27"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="22"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <button opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="999" verticalHuggingPriority="999" horizontalCompressionResistancePriority="999" verticalCompressionResistancePriority="999" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="isE-lw-e7e">
-                                                    <rect key="frame" x="324" y="9" width="70" height="30"/>
+                                                    <rect key="frame" x="336" y="8" width="70" height="32"/>
                                                     <color key="backgroundColor" red="0.001327166334" green="0.32755678890000001" blue="0.57669931649999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                     <constraints>
                                                         <constraint firstAttribute="width" constant="70" id="Sro-3S-hfX"/>
@@ -747,7 +747,7 @@ Rooms</string>
                                                     </connections>
                                                 </button>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="999" verticalHuggingPriority="999" horizontalCompressionResistancePriority="999" verticalCompressionResistancePriority="999" text="2,000" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xiX-5n-2nc">
-                                                    <rect key="frame" x="20" y="11" width="108" height="27"/>
+                                                    <rect key="frame" x="8" y="8" width="108" height="32.666666666666664"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="40"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
@@ -797,7 +797,7 @@ Rooms</string>
                         <viewControllerLayoutGuide type="bottom" id="nIG-Bg-QwP"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="qMX-hV-sLN">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="672"/>
+                        <rect key="frame" x="0.0" y="64" width="414" height="672"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="W7I-v8-ucK">
@@ -845,10 +845,10 @@ Rooms</string>
         <image name="other_rooms" width="1000" height="667"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="SeV-C9-jHm"/>
+        <segue reference="PO2-E8-pWl"/>
         <segue reference="TNx-VS-Zl2"/>
         <segue reference="teA-29-3zD"/>
-        <segue reference="PO2-E8-pWl"/>
         <segue reference="WPw-FD-9Tf"/>
+        <segue reference="SeV-C9-jHm"/>
     </inferredMetricsTieBreakers>
 </document>

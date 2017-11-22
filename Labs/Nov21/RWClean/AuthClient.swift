@@ -72,10 +72,8 @@ public final class AuthClient {
   fileprivate let baseURL: URL
   fileprivate let session = URLSession.shared  
   fileprivate var window: UIWindow?
-    
-    
-    fileprivate let multicastDelegate = MulticastClosureDelegate<Success, Cancel>()
-    
+  
+  fileprivate let multicastDelegate = MulticastClosureDelegate<Success, Cancel>()
   
   // MARK: - Class Constructors
   public static let shared: AuthClient = {
@@ -103,10 +101,9 @@ public final class AuthClient {
     }
     
     multicastDelegate.addClosurePair(for: object, success: success, failure: userCancelled)
-    guard multicastDelegate.count == 1 else {return}
+    guard multicastDelegate.count == 1 else { return }
     showSignInWindow()
-    
-}
+  }
   
   public func signOut() {
     authTuple = nil
@@ -130,22 +127,20 @@ public final class AuthClient {
 extension AuthClient: AuthControllerDelegate {
   
   internal func signInCancelled(on controller: UIViewController) {
-    multicastDelegate.getFailureTuples().forEach { (closure, queue) in
-        queue.async(execute: closure)
-        }
-    
+    multicastDelegate.getFailureTuples().forEach { closure, queue in
+      queue.async(execute: closure)
+    }
     dismissSignInWindow()
-
   }
   
   private func notifySignInSuccess(_ token: BasicAuthToken, _ user: User) {
-    multicastDelegate.getSuccessTuples().forEach { (closure, queue) in
-        queue.async {
-            closure(token, user)
-        }
+    multicastDelegate.getSuccessTuples().forEach { closure, queue in
+      queue.async {
+        closure(token, user)
+      }
     }
     dismissSignInWindow()
-}
+  }
   
   internal func signInRequested(on controller: UIViewController,
                                 email: String,
