@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13527"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="QuoteView" customModule="QuotePro" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="placeholder" translatesAutoresizingMaskIntoConstraints="NO" id="kMe-fE-kGe">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                </imageView>
+                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillProportionally" alignment="center" spacing="50" translatesAutoresizingMaskIntoConstraints="NO" id="Gj2-VD-dl6">
+                    <rect key="frame" x="8" y="278" width="359" height="110"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Some Quote" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MQb-cT-Ps6">
+                            <rect key="frame" x="87.5" y="0.0" width="184.5" height="36"/>
+                            <fontDescription key="fontDescription" type="system" weight="black" pointSize="30"/>
+                            <color key="textColor" red="1" green="0.0020097530456205659" blue="0.85777865045854518" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Author" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rqg-yj-nPU">
+                            <rect key="frame" x="144" y="86" width="71" height="24"/>
+                            <fontDescription key="fontDescription" type="system" weight="black" pointSize="20"/>
+                            <color key="textColor" red="0.015756598348714457" green="1" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                </stackView>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="Gj2-VD-dl6" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="8" id="50H-Si-zNJ"/>
+                <constraint firstItem="kMe-fE-kGe" firstAttribute="bottom" secondItem="vUN-kp-3ea" secondAttribute="bottom" id="DPJ-Ek-PD7"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="Gj2-VD-dl6" secondAttribute="trailing" constant="8" id="FhM-vN-Chr"/>
+                <constraint firstItem="Gj2-VD-dl6" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="Fsm-Tn-Wyx"/>
+                <constraint firstItem="kMe-fE-kGe" firstAttribute="trailing" secondItem="vUN-kp-3ea" secondAttribute="trailing" id="ZBv-Bh-xxW"/>
+                <constraint firstItem="kMe-fE-kGe" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="hy3-Er-FG0"/>
+                <constraint firstItem="Gj2-VD-dl6" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="uxf-81-37H"/>
+                <constraint firstItem="kMe-fE-kGe" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="zD2-BJ-L8o"/>
+            </constraints>
+            <nil key="simulatedTopBarMetrics"/>
+            <nil key="simulatedBottomBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <connections>
+                <outlet property="quoteAuthorLabel" destination="rqg-yj-nPU" id="xoZ-MK-5I6"/>
+                <outlet property="quoteImageView" destination="kMe-fE-kGe" id="mxq-G1-B9p"/>
+                <outlet property="quoteTextLabel" destination="MQb-cT-Ps6" id="JDC-u0-w1X"/>
+            </connections>
+            <point key="canvasLocation" x="24.5" y="52.5"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="placeholder" width="1600" height="1200"/>
+    </resources>
+</document>
